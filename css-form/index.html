@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS EXTERNO-->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+
+    <form action="cadastro" method="get">
+
+        <fieldset>
+
+            <legend>Dados Pessoais:</legend>
+
+            <!--NOME-->
+            <label for="c-nome">Nome: </label>
+            <input type="text" name="nome" id="c-nome" placeholder="Digite seu nome:" required> <br>
+    
+            <!--EMAIL-->
+            <label for="c-email">E-mail: </label>
+            <input type="email" name="email" id="c-email"> <br>
+
+            <!--SENHA-->
+            <label for="c-senha">Senha: </label>
+            <input type="password" name="senha" maxlength="10" id="c-senha" required> <br>
+
+            <!--BUSCA-->
+            <label for="c-busca">Busca: </label>
+            <input type="search" name="busca" id="c-busca"> <br>
+
+            <!--SITE-->
+            <label for="c-site">Site: </label>
+            <input type="url" name="site" id="c-site"> <br>
+
+            <!--DATA-->
+            <label for="c-data">Data: </label>
+            <input type="date" name="data" id="c-data"> <br>
+
+            <!--HORA-->
+            <label for="c-hora">Hora: </label>
+            <input type="time" name="hora" id="c-hora"> <br>
+
+            <!--QUANTIDADE-->
+            <label for="c-quant">Quantidade: </label>
+            <input type="number" name="quant" id="c-quant" min="0" max="50" step="0.01"> <br>
+
+            <!--UNIDADE-->
+            <label for="c-unid">Unidade: </label>
+            <input type="range" name="unid" id="c-unid">
+            <span id="valor">50</span> <br>
+    
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Tamanho do Manequim:</legend>
+
+            <!--TAMANHO PEQUENO-->
+            <input type="radio" name="tamanho" id="c-peq" value="P">
+            <label for="c-peq">Pequeno</label>
+
+            <!--TAMANHO MEDIO-->
+            <input type="radio" name="tamanho" id="c-med" value="M">
+            <label for="c-med">Medio</label>
+
+            <!--TAMANHO GRANDE-->
+            <input type="radio" name="tamanho" id="c-grd" value="G">
+            <label for="c-grd">Grande</label>
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Cores:</legend>
+
+            <!--COR AZUL-->
+            <input type="checkbox" name="cores" id="c-azul" value="Azul">
+            <label for="c-azul">Azul</label> <br>
+
+            <!--COR VERMELHO-->
+            <input type="checkbox" name="cores" id="c-vermelho" value="Vermelho">
+            <label for="c-vermelho">Vermelho</label> <br>
+
+            <!--COR VERDE-->
+            <input type="checkbox" name="cores" id="c-verde" value="Verde">
+            <label for="c-verde">Verde</label> <br>
+
+            <!--COR PERSONALIZADA-->
+            <input type="color" name="cor-per" id="c=pers">
+            <label for="c-pers">Personalize uma Cor</label> <br>
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Endereço de Entrega:</legend>
+
+            <!--ESTADOS-->
+            <label for="c-estado">Estado: </label>
+            <select name="estado" id="c-estado">
+                <option value="" disabled selected>Selecione um Estado: </option>
+
+                <!--SUDESTE-->
+                <optgroup label="Sudeste">
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                </optgroup>
+
+                <!--SUL-->
+                <optgroup label="Sul">
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="PR">Paraná</option>
+                    <option value="SC">Santa Catarina</option>
+                </optgroup>
+
+            <br>
+            
+            <!--CAMPO DE COMENTARIOS-->
+            <label for="c-obs">Observações: </label>
+            <textarea name="obs" id="c-obs" cols="30" rows="10"></textarea>
+ 
+        </fieldset>
+        
+        <!--BOTÃO CADASTRAR-->
+        <input type="submit" value="Cadastrar">
+
+    </form>
+
+    <!--JAVASCRIPT EXTERNO-->
+    <script src="script.js"></script>
+</body>
+</html>
